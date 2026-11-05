@@ -8,25 +8,31 @@ public class PedidoResponseDTO {
     private Long id;
     private Long usuarioId;
     private String nombreUsuario;
+    private String nombre;
     private LocalDateTime fecha;
     private String estado;
+    private String disenoJson;
+    private String vistaPrevia;
 
-    // Constructor
     public PedidoResponseDTO(
             Long id,
             Long usuarioId,
             String nombreUsuario,
+            String nombre,
             LocalDateTime fecha,
-            String estado) {
-
+            String estado,
+            String disenoJson,
+            String vistaPrevia
+    ) {
         this.id = id;
         this.usuarioId = usuarioId;
         this.nombreUsuario = nombreUsuario;
+        this.nombre = nombre;
         this.fecha = fecha;
         this.estado = estado;
+        this.disenoJson = disenoJson;
+        this.vistaPrevia = vistaPrevia;
     }
-
-    // Getters
 
     public Long getId() {
         return id;
@@ -40,11 +46,23 @@ public class PedidoResponseDTO {
         return nombreUsuario;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public LocalDateTime getFecha() {
         return fecha;
     }
 
     public String getEstado() {
         return estado;
+    }
+
+    public String getDisenoJson() {
+        return disenoJson;
+    }
+
+    public String getVistaPrevia() {
+        return vistaPrevia;
     }
 }
