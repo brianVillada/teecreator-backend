@@ -53,3 +53,19 @@ Thumbs.db
 # Variables y configuraciones privadas
 .env
 application-local.properties
+
+# Entorno y archivos de Python
+python/.venv/
+python/.env
+python/__pycache__/
+python/**/*.pyc
+
+# Archivos compilados de Python
+*.pyc
+*.pyo
+
+# Caché de Python en cualquier directorio
+__pycache__/
+# Reportes PDF generados
+python/*.pdf
+python/reports/*.pdf
